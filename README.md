@@ -1,24 +1,16 @@
-# Diseño y programación de una línea automatizada con TIA Portal y Factory IO
+# Diseño y programación de una línea automatizada con TIA Portal y Factory I/O
 
 Proyecto final del **CFGS en Automatización y Robótica Industrial (2024)**, realizado por **Carlos Villar Cejalvo**.
 
-El proyecto consiste en el **diseño, programación y simulación de una línea automatizada** mediante **Siemens TIA Portal V17**, **S7-PLCSIM** y **Factory IO**, incorporando además una **interfaz HMI/SCADA** para supervisión y control.
-
-> **Importante**
-> - Este repositorio muestra un **proyecto académico de simulación**.
-> - No corresponde a una instalación industrial real puesta en marcha.
-> - Los vídeos y capturas proceden del desarrollo original realizado en 2024.
-> - El archivo archivado de TIA Portal se conserva, pero **no se ha podido volver a restaurar ni verificar recientemente** por falta de licencia.
-
----
+El proyecto consiste en el **diseño, programación y simulación de una línea automatizada** mediante **Siemens TIA Portal V17**, **S7-PLCSIM** y **Factory I/O**, incorporando además una **interfaz HMI/SCADA** para supervisión y control.
 
 ## Resumen del proyecto
 
 La línea simulada integra las siguientes etapas:
 
-1. **Entrada y alimentación de piezas** mediante cintas transportadoras.
-2. **Manipulación automática** y transferencia de piezas hacia una estación de mecanizado.
-3. **Clasificación en la salida** mediante dos cámaras/sensores y un sistema de desvío.
+1. **Entrada y alimentación de piezas** mediante un cilindro neumático y cintas transportadoras.
+2. **Manipulación en modo manual o automático** mediante un robot industrial que introduce las piezas en la estación de mecanizado.
+3. **Clasificación en la salida** mediante dos cámaras, sensores y cilindros neumáticos que desvían las piezas hacia una u otra línea según su color.
 4. **Paletizado** de piezas en líneas diferenciadas mediante sistemas **Pick & Place XYZ**.
 5. **Almacenamiento automático** del palé mediante grúa y estanterías.
 6. **Supervisión HMI/SCADA** con distintos perfiles de usuario, estados del proceso y visualización del almacén.
@@ -41,9 +33,9 @@ El vídeo resume el funcionamiento completo de la instalación y muestra, en ord
 
 | Etapa | Contenido mostrado |
 |---|---|
-| Entrada | Alimentación y avance inicial de piezas |
-| Robot y mecanizado | Transferencia mediante robot industrial a la estación de mecanizado |
-| Clasificación | Zona de control de salida, lectura y desvío de piezas según su tipo/color |
+| Entrada | Alimentación mediante cilindro neumático y transporte por cintas |
+| Robot y mecanizado | Manipulación manual o automática e introducción de piezas en la estación de mecanizado |
+| Clasificación | Detección del color mediante cámaras y sensores, y desvío mediante cilindros neumáticos |
 | Paletizado | Recogida y colocación de piezas en palés mediante Pick & Place XYZ |
 | Almacenamiento | Transporte del palé y depósito en la estantería automática |
 
@@ -56,11 +48,9 @@ Este vídeo muestra:
 - acceso con perfiles **OPERARIO** y **JEFE**,
 - diferencia de permisos entre usuarios,
 - mandos de **marcha**, **paro** y **reinicio**,
-- comprobación visual en Factory IO de la respuesta del proceso,
+- comprobación visual en Factory I/O de la respuesta del proceso,
 - visualización de estados de **marcha**, **parada** y **alarma**,
 - representación de las posiciones del **almacén** y registro de palés.
-
-> En la edición del vídeo se ha sustituido el logotipo externo por el texto **"PROYECTO ACADÉMICO"** y se ha corregido visualmente la etiqueta **"LOGOUT"**, sin alterar la demostración funcional.
 
 ---
 
@@ -84,7 +74,7 @@ Este vídeo muestra:
 
 - **Siemens TIA Portal V17**: programación del PLC y desarrollo de la HMI.
 - **S7-PLCSIM**: simulación del PLC Siemens.
-- **Factory IO**: modelado y simulación 3D de la instalación.
+- **Factory I/O**: modelado y simulación 3D de la instalación.
 - **GRAFCET**: definición de secuencias y lógica de funcionamiento.
 - **Esquemas eléctricos y neumáticos**: documentación técnica del sistema.
 
@@ -148,7 +138,7 @@ Para abrirlo es necesario:
 2. restaurar el proyecto archivado desde la opción correspondiente del programa,
 3. utilizar **S7-PLCSIM** para la simulación del PLC.
 
-### Factory IO
+### Factory I/O
 
 La escena principal conservada del proyecto se encuentra en:
 
