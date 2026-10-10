@@ -1,0 +1,12 @@
+# Archivos temporales y copias locales
+*.tmp
+*.bak
+~$*
+Thumbs.db
+.DS_Store
+__pycache__/
+*.log
+# Evitar carpetas generadas al descomprimir TIA Portal en el repositorio
+SearchIndex/
+IM/SearchIndex/
+TMP/
