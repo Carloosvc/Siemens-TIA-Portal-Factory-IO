@@ -58,15 +58,15 @@ Este vídeo muestra:
 
 ### Sistema de almacenamiento automático
 
-![Sistema de almacenamiento automático](Media/Imagenes/03-Almacenamiento-Automatico.jpg)
+![Sistema de almacenamiento automático](Media/Imagenes/02-Almacenamiento-Automatico.jpg)
 
 ### SCADA de control
 
-![Pantallas principales del SCADA](Media/Imagenes/04-SCADA-Control.jpg)
+![Pantallas principales del SCADA](Media/Imagenes/03-SCADA-Control.jpg)
 
 ### SCADA del almacén
 
-![Visualización del almacén en el SCADA](Media/Imagenes/05-SCADA-Almacen.jpg)
+![Visualización del almacén en el SCADA](Media/Imagenes/04-SCADA-Almacen.jpg)
 
 ---
 
